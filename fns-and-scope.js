@@ -30,7 +30,7 @@ function getName() {
 
   //Code Here
 function welcome() {
-  return "Welcome, " + getName();
+  alert("Welcome, " + getName());
 }
 
 //////////////////PROBLEM 4////////////////////
@@ -40,8 +40,7 @@ function welcome() {
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
-  A parameter is what you can pass into a function. An argument is the value of the paramter that you want to pass in. 
+  //A parameter is something you can pass into a function, and the arguments are the values that the parameters can hold.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -50,14 +49,7 @@ function welcome() {
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
-The falsy values are NaN, null, 0, "", false, and undefined. You can check if something is falsy if it is not truthy.
-if(/*condition is truthy or false*/) {
-  return true;
-} else {
-  return false;
-}
-
+  //The falsy values are: null, undefined, 0, "", NaN, and false. You can check if something is falsy with an if statement. if( condition is true) {this block runs} else {this block runs}.
 
 //////////////////PROBLEM 6////////////////////
 
@@ -67,16 +59,16 @@ if(/*condition is truthy or false*/) {
 
   //Code Here
   function myName() {
-    return "Janise";
+      return "Janise";
   }
 
 
 //Now save the function definition of myName into a new variable called newMyName
-var newMyName = myName();
+var newMyName = myName;
   //Code Here
 
 //Now alert the result of invoking newMyName
-alert(newMyName());
+alert(newMyName);
 
 
 //////////////////PROBLEM 7////////////////////
@@ -87,7 +79,7 @@ alert(newMyName());
   function outerFn(){
     return function() {
       return "Janise";
-    }
+    };
   }
   //Code Here
 
